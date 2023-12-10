@@ -1,0 +1,72 @@
+{
+  "background_color": "#ffffff",
+  "description": "class helper",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "name": "학급도우미",
+  "orientation": "any",
+  "scope": "./",
+  "short_name": "학급도우미",
+  "start_url": "./",
+  "theme_color": "#ffffff",
+  "categories": [
+    "news",
+    "social"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "android/android192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android/android144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "android/android96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "android/android72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "android/android48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "android/android512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "classhelper",
+      "url": "https://classhelper.kro.kr/",
+      "description": "aaaa"
+    }
+  ],
+  "id": "classhelper",
+  "lang": "ko",
+  "edge_side_panel": {
+    "preferred_width": 0
+  }
+}

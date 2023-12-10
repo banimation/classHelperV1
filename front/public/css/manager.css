@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    user-zoom: none;
+    color: rgb(25, 118, 210);
+    font-family: noto-sans;
+}
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#board {
+    margin-top: 4vh;
+    border: solid 1px rgb(25, 118, 210);
+    background-color: #fff;
+    border-radius: 40px;
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon {
+    color: rgb(25, 118, 210);
+    font-size: 3rem;
+    margin-top: 3.7vh;
+}
+#title {
+    margin-top: 0vh;
+    font-size: 2rem;
+    color: #352F44;
+}
+#password {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #575757;
+    background-color: #fff;
+    border-bottom-color: rgb(25, 118, 210);
+    outline: none;
+}
+
+.board {
+    margin-top: 1.5vh;
+    border: solid 1px rgb(25, 118, 210);
+    background-color: #fff;
+    border-radius: 40px;
+    width: 80vw;
+    height: 34.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.board h1 {
+    color: #352F44;
+    margin-top: 2vh;
+}
+.btn {
+    margin-top: 4vh;
+    border: solid 1px rgb(25, 118, 210);
+    background-color: rgb(25, 118, 210);
+    border-radius: 40px;
+    width: 60vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.btn span {
+    color: #fff;
+}
+#notice-create-pop, #notice-delete-pop, #exam-delete-pop, #exam-create-pop {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(25, 118, 210);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+.close-btn {
+    color: #fff;
+    position: absolute;
+    top: 3vh;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#notice-create-pop h1, 
+#notice-create-pop h2,
+#notice-delete-pop h1,
+#exam-create-pop h1, 
+#exam-create-pop h2,
+#exam-delete-pop h1 {
+    color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#notice-create-input-title, 
+#notice-create-input-description {
+    margin-top: 3vh;
+    border: solid 1px #FAF0E6;
+    border-radius: 40px;
+    background-color: #FAF0E6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    outline: none;
+    padding: 10px;
+    width: 70vw;
+}
+.container h2 {
+    margin-top: 7vh;
+}
+#exam h2 {
+    margin-top: 4vh;
+}
+#notice-create-input-title{
+    height: 5vh;
+}
+#notice-create-input-description {
+    padding-top: 20px;
+    height: 30vh;
+}
+#notice-create-btn, #exam-create-btn {
+    margin-top: 7vh;
+    border: solid 1px #fff;
+    background-color: #fff;
+    border-radius: 40px;
+    width: 60vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+#notice-list, #exam-list {
+    overflow: scroll;
+    margin-top: 1.5vh;
+    border: solid 1px #FAF0E6;
+    background-color: #FAF0E6;
+    border-radius: 40px;
+    width: 80vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vh;
+}
+.notice-item, .exam-item {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    border-bottom: solid 1px rgb(25, 118, 210);
+    padding-bottom: 3vh;
+    margin-top: 4vh;
+}
+.notice-item-name, .exam-item-name {
+    color: rgb(25, 118, 210);
+}
+.notice-delete-btn span, .exam-delete-btn span {
+    color: #fff;
+}
+.notice-delete-btn, .exam-delete-btn {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(25, 118, 210);
+    background-color: rgb(25, 118, 210);
+    border-radius: 40px;
+    width: 15vw;
+    height: 4vh;
+}
+#notice-list::-webkit-scrollbar {
+    display: none;
+}
+#exam-create-input-subject, #exam-type {
+    margin-top: 2vh;
+    width: 70vw;
+    height: 5vh;
+}
+#exam-create-input-date {
+    margin-top: 3vh;
+    border: solid 1px #FAF0E6;
+    border-radius: 40px;
+    background-color: #FAF0E6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    outline: none;
+    padding: 10px;
+    width: 70vw;
+}
+#exam-create-input-description {
+    padding-top: 20px;
+    height: 15vh;
+}
+#exam-create-input-title, 
+#exam-create-input-description {
+    margin-top: 2vh;
+    border: solid 1px #FAF0E6;
+    border-radius: 40px;
+    background-color: #FAF0E6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    outline: none;
+    padding: 10px;
+    width: 70vw;
+}

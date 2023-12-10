@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자</title>
+    <link rel="icon" href="/icon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/css/manager.css">
+</head>
+<body>
+    <div id="notice-create-pop">
+        <div class="close-btn">&times;</div>
+        <div class="container">
+            <h1>Create</h1>
+            <h2>Title</h2>
+            <input type="text" id="notice-create-input-title" placeholder="Enter Title">
+            <h2>description</h2>
+            <textarea id="notice-create-input-description" placeholder="Enter description"></textarea>
+            <div id="notice-create-btn">Create!</div>
+        </div>
+    </div>
+    <div id="notice-delete-pop">
+        <div class="close-btn">&times;</div>
+        <div class="container">
+            <h1>Delete</h1>
+            <div id="notice-list">
+                <div class="notice-item">
+                    <div class="notice-item-name">공자시항</div>
+                    <div class="notice-delete-btn"><span>delete</span></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="exam-create-pop">
+        <div class="close-btn">&times;</div>
+        <div class="container" id="exam">
+            <h1>Create</h1>
+            <h2>Subject</h2>
+            <select id="exam-create-input-subject">
+                <option value="korean">문학(독서)</option>
+                <option value="math">수학</option>
+                <option value="english">영어</option>
+                <option value="physics">물리</option>
+                <option value="chemistry">화학</option>
+                <option value="biology">생명</option>
+                <option value="earth">지구</option>
+                <option value="chinese">중국어</option>
+                <option value="athletic">체육</option>
+                <option value="art">미술</option>
+            </select>
+            <h2>Type</h2>
+            <select id="exam-type">
+                <option value="performance">수행평가</option>
+                <option value="peper">지필평가</option>
+            </select>
+            <h2>Date</h2>
+            <input type="text" name="" id="exam-create-input-date" placeholder="Enter Date">
+            <h2>description</h2>
+            <textarea id="exam-create-input-description" placeholder="Enter description"></textarea>
+            <div id="exam-create-btn">Create!</div>
+        </div>
+    </div>
+    <div id="exam-delete-pop">
+        <div class="close-btn">&times;</div>
+        <div class="container">
+            <h1>Delete</h1>
+            <div id="exam-list">
+                <div class="exam-item">
+                    <div class="exam-item-name">시험일정</div>
+                    <div class="exam-delete-btn"><span>delete</span></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="board">
+        <span class="icon material-symbols-outlined">lock</span>
+        <h1 id="title">Password</h1>
+        <input type="text" id="password" placeholder="Enter Password">
+    </div>
+    <div id="notice" class="board">
+        <h1>공지</h1>
+        <div class="btn" id="notice-create"><span>Create</span></div>
+        <div class="btn" id="notice-delete"><span>Delete</span></div>
+    </div>
+    <div id="exam" class="board">
+        <h1>시험일정</h1>
+        <div class="btn" id="exam-create"><span>Create</span></div>
+        <div class="btn" id="exam-delete"><span>Delete</span></div>
+    </div>
+</body>
+<script src="/dist/manager.js"></script>
+</html>

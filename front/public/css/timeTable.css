@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    user-zoom: none;
+    color: rgb(25, 118, 210);
+    font-family: noto-sans;
+}
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title {
+    margin-top: 3vh;
+}
+#container {
+    border: solid 1px #fff;
+    /* border-radius: 40px; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 84vw;
+    height: 75vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 1vh;
+}
+#week-day {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#week-day span {
+    color: rgb(25, 118, 210);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 21px;
+    border: solid 1px rgb(25, 118, 210);
+    padding: 0.6vh;
+}
+span {
+    color: rgb(25, 118, 210);
+}
+#time-table-colum {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 5.5vh;
+}
+#time-table-colum div {
+    text-align: center;
+}
+.subject, #period-table .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(25, 118, 210);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.subject-changed {
+    background-color: yellow;
+}
